@@ -16,8 +16,8 @@ Deletes backups older than 15 days, but ensures at least the last 10 backups are
 Create /SPACE (sudo mkdir /SPACE), it is recommended to mount a large external storage device, thus if you disk breaks, it doesn't take with it your backups! 
 Copy the above script into a file, for example, backup.sh.
 Make the script executable by running chmod +x backup.sh.
-Edit your crontab file by running sudo crontab -e to schedule the script. You might add a line like 0 2 * * * /path/to/backup.sh to run the backup daily at 2:00 AM. You could use 0 * * * * if you want it backed up every hour, but remember that the more frequent you backup, the more disk it requires, however, it is nice to recover (not to lose) 1 hour of work at the most and always have that feeling of safety. 
-Ensure your system has mail installed for the email functionality to work, or modify the script to use an alternative method of notification as needed.
+Edit your crontab file by running sudo crontab -e to schedule the script. You might add a line like 0 2 * * * /path/to/backup.sh to run the backup daily at 2:00 AM. You could use 0 * * * * if you want it backed up every hour. 
+Ensure your system has mail installed for the email functionality to work, or modify the script to use an alternative method of notification as needed, one easy way is to simply comment the notification lines with #. 
 This script assumes you have sufficient permissions to access all files and directories intended for backup and to write to the backup directory. It also assumes that the mail command is configured correctly to send emails from your system. Adjustments may be required based on the specific setup and requirements of your system.
 
 # Restore a backup
