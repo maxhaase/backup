@@ -1,5 +1,5 @@
 # backup
-Programmmer: maxhaase@gmail.com
+Programmer: maxhaase@gmail.com
 
 This is a Bash script that you can invoke from crontab to backup essential data on an Linux system, excluding directories that typically contain cache, temporary files, or other non-essential data. It is a must-have if you have anything important on your computer! 
 Note: my personal preference is to mount a disk on /SPACE/BACKUP/ which you can change if you want. I strongly advice you to encrypt the disc, especially if it is an external disk like a USB drive, to prevent unauthorized access! 
