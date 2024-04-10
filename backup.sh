@@ -5,8 +5,8 @@ BACKUP_DIR="/SPACE/BACKUP"
 SOURCE_DIR="/"
 EXCLUDE_DIRS="--exclude=/proc --exclude=/tmp --exclude=/mnt --exclude=/dev --exclude=/sys --exclude=/run --exclude=$BACKUP_DIR"
 
-# Date format for backup filename
-DATE_FMT=$(date +"%A_%B_%d_%Y")
+# Date and time format for backup filename
+DATE_FMT=$(date +"%A_%B_%d_%Y_02-00")
 BACKUP_FILE="$BACKUP_DIR/backup_$DATE_FMT_.tar.gz"
 
 # Start time
