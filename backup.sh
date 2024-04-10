@@ -1,4 +1,5 @@
 #!/bin/bash
+# maxhaase@gmail.com
 
 # Define backup and source directories
 BACKUP_DIR="/SPACE/BACKUP"
